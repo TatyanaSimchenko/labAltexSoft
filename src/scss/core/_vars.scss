@@ -1,0 +1,25 @@
+//colors
+$black: #000;
+$white: #fff;
+$bg-color: #313131;
+$green: #a7c353;
+$h1-color: #666666;
+$h2-color: #989898;
+$h3-color: #878787;
+$text-color: #868686;
+$icon-color: #d4d4d4;
+$area-color: #383838;
+
+//font-sizes
+$base-font-size: 16px;
+$base-font: "Georgia Regular font" sans-serif;
+
+@function calcRem($size) {
+  $remSize: $size / $base-font-size;
+  @return #{$remSize}rem;
+}
+$H22: calcRem(22px);
+$H16: calcRem(16px);
+$H14: calcRem(14px);
+$H13: calcRem(13px);
+$H12: calcRem(12px);

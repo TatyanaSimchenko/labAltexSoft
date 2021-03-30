@@ -1,0 +1,41 @@
+.header {
+  max-width: 1200px;
+  background-color: $white;
+  padding: 0 20px;
+  margin: 0 auto;
+  border-top: 3px solid $green;
+
+  &__inner {
+    border-bottom: 1px solid $green;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.logo {
+  margin-top: 35px;
+  &__text {
+    // @include text($H12, 400, $text-color);
+    text-transform: capitalize;
+  }
+}
+.menu {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // padding: 55px 0px 35px 0;
+  }
+  &__item:not(:last-of-type) {
+    margin-right: 20px;
+  }
+  &__link {
+    @include text($H13, 400, $text-color);
+    text-transform: uppercase;
+    padding: 55px 15px 35px 15px;
+    transition: all 0.5s ease;
+    &:hover {
+      color: $white;
+      background-color: $green;
+    }
+  }
+}

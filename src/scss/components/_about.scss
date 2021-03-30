@@ -1,0 +1,74 @@
+.about {
+  background-color: $white;
+  max-width: 1200px;
+  width: 100%;
+  min-height: 510px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  &__inner {
+    border-top: 1px solid #e2e2e2;
+    display: flex;
+    justify-content: space-between;
+
+    flex-direction: row;
+  }
+  &__item {
+    max-width: 280px;
+  }
+  &__item:not(:last-of-type) {
+    margin-left: 40px;
+  }
+  &__title {
+    padding: 40px 0 30px 0;
+    text-transform: capitalize;
+  }
+  &__info-image {
+    border: 1px solid #e2e2e2;
+    padding: 5px;
+    margin-bottom: 20px;
+    max-width: 280px;
+    min-height: 150px;
+  }
+  &__info-text {
+    margin-bottom: 20px;
+  }
+  &__link {
+    color: $green;
+    display: flex;
+    justify-content: flex-end;
+  }
+  &__box {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  &__box-img {
+    @include size(64px);
+    background-color: #000;
+    margin-right: 18px;
+  }
+  &__box-subtitle {
+    margin-bottom: 15px;
+  }
+  &__clients-description:not(:last-of-type) {
+    margin-bottom: 35px;
+  }
+  &__clients-subtitle {
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  &__clients-subtitle::after {
+    content: url(/assets/svg/path.svg);
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    top: -12px;
+    left: 0;
+  }
+  &__clients-subtitle span {
+    font-family: serif;
+    color: #d4d4d4;
+    text-transform: uppercase;
+  }
+}

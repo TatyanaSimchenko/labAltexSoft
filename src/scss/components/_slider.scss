@@ -1,0 +1,16 @@
+.slider {
+  background-color: $white;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 42px 0;
+  &__inner {
+    padding: 0 20px;
+  }
+  &__title {
+    margin: 0 auto;
+    max-width: 715px;
+    text-align: center;
+    // @include text($H22, 400, $title-color);
+    font-style: italic;
+  }
+}

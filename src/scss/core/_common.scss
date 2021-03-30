@@ -5,20 +5,24 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: $bg-color;
+}
 
 body,
 input,
 button,
 textarea,
 select {
-  // font-family: sans-serif;
+  font-family: $base-font;
 }
 
 ul {
   list-style: none;
 }
 
-a, button {
+a,
+button {
   background-color: transparent;
   border: none;
   outline: none;
@@ -26,3 +30,22 @@ a, button {
   text-decoration: none;
 }
 
+h1 {
+  font-size: $H22;
+  color: $h1-color;
+}
+
+h2 {
+  font-size: $H16;
+  color: $h2-color;
+}
+
+h3 {
+  font-size: $H14;
+  color: $h3-color;
+}
+
+p {
+  font-size: $H13;
+  color: $text-color;
+}
