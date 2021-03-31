@@ -1,0 +1,149 @@
+.footer {
+  margin: 0 auto;
+  max-width: 1200px;
+
+  &__items {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 20px;
+  }
+  &__title {
+    color: $white;
+    padding: 40px 0 20px 0;
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 20px;
+  }
+  &__text {
+    @include text($H13, 400, #9999);
+  }
+  &__contact:not(:last-of-type) {
+    margin-bottom: 20px;
+  }
+  &__contact span {
+    margin-right: 5px;
+    line-height: 1.6;
+  }
+  &__contact-mail {
+    color: $green;
+  }
+  &__contact-tel {
+    color: $text-color;
+  }
+  &__item {
+    max-width: 225px;
+  }
+  &__subtitle {
+    @include text($H12, 600, #9999);
+  }
+  &__social {
+    border-bottom: 1px solid #3a3a3a;
+    margin-bottom: 15px;
+  }
+  &__social-link {
+    color: $green;
+    line-height: 1.7;
+    padding-bottom: 5px;
+  }
+  &__icon {
+    margin-right: 10px;
+    fill: $white;
+    width: 30px;
+    height: 30px;
+    border: 1px solid transparent;
+    background-color: $area-color;
+    border-radius: 50%;
+
+    transition: background-color 0.5s ease;
+    &--linkedin {
+      padding: 5px 0 0 0;
+    }
+    &--twitter {
+      padding: 8px 0 0 5px;
+    }
+    &--pinterest {
+      padding: 6px 0 0 6px;
+    }
+    &--rss {
+      padding: 6px 0 0 4px;
+    }
+  }
+  &__icon:hover {
+    background-color: $green;
+  }
+  &__blog:not(:last-of-type) {
+    margin-bottom: 15px;
+  }
+  &__blog:last-of-type {
+    margin-bottom: 30px;
+  }
+  &__blog-title {
+    @include text($H13, 600, #9999);
+  }
+  &__blog-subtitle {
+    @include text($H11, 400, #9999);
+    margin-bottom: 10px;
+  }
+  &__blog-text {
+    @include text($H12, 400, #9999);
+    margin-bottom: 15px;
+  }
+  &__blog-link {
+    display: flex;
+    justify-content: flex-end;
+    color: $green;
+  }
+  &__form-input {
+    outline: none;
+    background-color: $area-color;
+    @include text($H13, 400, $h3-color);
+    border-radius: 5px;
+    border: transparent;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 15px;
+    width: 225px;
+    &:hover {
+      background-color: $white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &__form-msg {
+    outline: none;
+    background-color: $area-color;
+    @include text($H13, 400, $h3-color);
+    border-radius: 5px;
+    border: transparent;
+    margin-bottom: 10px;
+    padding: 10px 10px 10px 15px;
+    width: 225px;
+    height: 110px;
+    &:hover {
+      background-color: $white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+  }
+  &__form-btn {
+    outline: none;
+    @include text($H13, 600, $black);
+    text-transform: uppercase;
+    background-color: $green;
+    width: 85px;
+    height: 30px;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: lighten($green, 5%);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    }
+    &:active {
+      background-color: darken($green, 5%);
+    }
+  }
+  &__copyright {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+}
