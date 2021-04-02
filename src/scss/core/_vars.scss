@@ -18,6 +18,8 @@ $base-font: "Georgia Regular font" sans-serif;
   $remSize: $size / $base-font-size;
   @return #{$remSize}rem;
 }
+
+//sizes
 $H22: calcRem(22px);
 $H16: calcRem(16px);
 $H14: calcRem(14px);

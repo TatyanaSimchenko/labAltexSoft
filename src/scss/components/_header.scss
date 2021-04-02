@@ -13,29 +13,94 @@
 }
 .logo {
   margin-top: 35px;
+
   &__text {
-    // @include text($H12, 400, $text-color);
     text-transform: capitalize;
+    width: 170px;
+    margin-bottom: 30px;
   }
 }
 .menu {
+  display: none;
+  position: absolute;
+  background-color: $white;
+  width: 100%;
+  right: 0;
+  top: 80px;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  z-index: 100;
   &__list {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    // padding: 55px 0px 35px 0;
+    flex-direction: column;
   }
-  &__item:not(:last-of-type) {
-    margin-right: 20px;
+  &__item {
+    border-bottom: 1px solid $green;
+    transition: background-color 0.5s ease;
+    &:hover {
+      background-color: $green;
+    }
   }
   &__link {
-    @include text($H13, 400, $text-color);
-    text-transform: uppercase;
-    padding: 55px 15px 35px 15px;
-    transition: all 0.5s ease;
-    &:hover {
-      color: $white;
-      background-color: $green;
+    @include text($H22, 400, $h1-color);
+    padding: 30px;
+  }
+}
+
+.menu._active {
+  display: block;
+}
+
+.menu._visible {
+  display: flex;
+  animation: fadeIn 1s ease;
+}
+
+.menu._hide {
+  animation: fadeOut 0.4s ease;
+}
+
+@media screen and (min-width: 1030px) {
+  .burder {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    width: 100%;
+    right: 0;
+    top: 0px;
+    height: auto;
+    background-color: transparent;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+    position: static;
+    &__list {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row;
+    }
+    &__item {
+      border-bottom: transparent;
+    }
+    &__item:not(:last-of-type) {
+      margin-right: 20px;
+    }
+    &__link {
+      @include text($H13, 400, $text-color);
+      text-transform: uppercase;
+      padding: 55px 15px 35px 15px;
+      transition: all 0.5s ease;
+      &:hover {
+        color: $white;
+        background-color: $green;
+      }
     }
   }
 }

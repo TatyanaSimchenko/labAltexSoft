@@ -5,9 +5,13 @@
   &__items {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     flex-direction: row;
     border-bottom: 1px solid #3a3a3a;
     margin-bottom: 20px;
+    @media screen and (max-width: 1030px) {
+      justify-content: center;
+    }
   }
   &__title {
     color: $white;
@@ -33,6 +37,12 @@
   }
   &__item {
     max-width: 225px;
+    @media screen and (max-width: 1230px) {
+      padding-left: 15px;
+    }
+    @media screen and (max-width: 1030px) {
+      margin-right: 15px;
+    }
   }
   &__subtitle {
     @include text($H12, 600, #9999);
@@ -133,6 +143,7 @@
     border: transparent;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 30px;
     &:hover {
       background-color: lighten($green, 5%);
       box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
@@ -145,5 +156,10 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    @media screen and (max-width: 1230px) {
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+    }
   }
 }
