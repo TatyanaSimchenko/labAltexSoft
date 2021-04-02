@@ -5,7 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon shortcut" type="image/png" href="favicon.0cb32477.png">
-  <link rel="stylesheet" href="style.b729a10d.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="style.85952f72.css">
   <title>Clearcut</title>
 </head>
 
@@ -16,7 +17,7 @@
       <img class="logo__image" src="CLEARCUT.50a08516.png" alt="logo">
       <p class="logo__text">Free PSD Website Template</p>
     </div>
-    <div class="menu">
+    <nav id="menu" class="menu">
       <ul class="menu__list">
         <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
         <li class="menu__item"><a class="menu__link" href="#">STYLE DEMO</a></li>
@@ -25,15 +26,14 @@
         <li class="menu__item"><a class="menu__link" href="#">PORTFOLIO</a></li>
         <li class="menu__item"><a class="menu__link" href="#">GALLERY</a></li>
       </ul>
-    </div>
+    </nav>
 
-    <!-- <button id="burger" class="burger">
-    <span class="burger__line"></span>
-    <span class="burger__line"></span>
-    <span class="burger__line"></span>
-  </button> -->
+    <button id="burger" class="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
 
-    <!-- <span class="header__line"></span> -->
   </div>
 </header>
   <section class="slider">
@@ -43,6 +43,58 @@
       erat. In fringilla massa ut nisi ullamcorper pellentesque „
     </h1>
   </div>
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="slide swiper-slide">
+        <img class="slide__img" src="slide-1.29851a8a.png" alt="image">
+        <div class="slide__description">
+          <h1 class="slide__title">This Is A Very Long Slider Title</h1>
+          <p class="slide__text">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque
+            sed.
+            Facilispede estibulum nulla orna nisl velit.</p>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img class="slide__img" src="slide-2.2bf0bd0a.png" alt="image">
+        <div class="slide__description">
+          <h1 class="slide__title">This Is A Very Long Slider Title</h1>
+          <p class="slide__text">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque
+            sed.
+            Facilispede estibulum nulla orna nisl velit.</p>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img class="slide__img" src="slide-1.29851a8a.png" alt="image">
+        <div class="slide__description">
+          <h1 class="slide__title">This Is A Very Long Slider Title</h1>
+          <p class="slide__text">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque
+            sed.
+            Facilispede estibulum nulla orna nisl velit.</p>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img class="slide__img" src="slide-2.2bf0bd0a.png" alt="image">
+        <div class="slide__description">
+          <h1 class="slide__title">This Is A Very Long Slider Title</h1>
+          <p class="slide__text">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque
+            sed.
+            Facilispede estibulum nulla orna nisl velit.</p>
+        </div>
+      </div>
+      <div class="slide swiper-slide">
+        <img class="slide__img" src="slide-1.29851a8a.png" alt="image">
+        <div class="slide__description">
+          <h1 class="slide__title">This Is A Very Long Slider Title</h1>
+          <p class="slide__text">Vestibulumaccumsan egestibulum eu justo convallis augue estas aenean elit intesque
+            sed.
+            Facilispede estibulum nulla orna nisl velit.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-pagination"></div>
 </section>
   <section class="about">
   <div class="about__inner">
@@ -149,22 +201,19 @@
     <div class="footer__item">
       <h2 class="footer__title">Stay Social</h2>
       <ul class="footer__socials">
-        <li class="footer__social"><a class="footer__social-link" href="#"><svg class="footer__icon footer__icon--linkedin">
+        <li class="footer__social"><a class="footer__social-link" href="https://www.linkedin.com/"><svg class="footer__icon footer__icon--linkedin">
               <use href="#linkedin"></use>
             </svg>Get linked up in LinkedIn</a></li>
-        <li class="footer__social"><a class="footer__social-link" href="#"><svg class="footer__icon footer__icon--twitter">
+        <li class="footer__social"><a class="footer__social-link" href="https://twitter.com/?lang=uk"><svg class="footer__icon footer__icon--twitter">
               <use href="#twitter"></use>
             </svg>Keep up with our Tweets</a></li>
-        <li class="footer__social"><a class="footer__social-link" href="#"><svg class="footer__icon footer__icon--pinterest">
+        <li class="footer__social"><a class="footer__social-link" href="https://www.pinterest.com/"><svg class="footer__icon footer__icon--pinterest">
               <use href="#pinterest"></use>
             </svg>Photos on Pinterest</a></li>
-        <li class="footer__social"><a class="footer__social-link" href="#"><svg class="footer__icon footer__icon--rss">
+        <li class="footer__social"><a class="footer__social-link" href="https://uk.wikipedia.org/wiki/RSS"><svg class="footer__icon footer__icon--rss">
               <use href="#rss"></use>
             </svg>RSS Feed</a></li>
       </ul>
-
-
-
     </div>
     <div class="footer__item">
       <h2 class="footer__title">From The Blog</h2>
@@ -217,5 +266,7 @@
 
 </footer>
 </body>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="app.f43b9500.js"></script>
 
 </html>
